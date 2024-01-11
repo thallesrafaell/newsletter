@@ -1,0 +1,40 @@
+@use "reset.scss";
+@use "variables.scss";
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(252.44deg, #1a1a1a 0%, #0a0a0a 100%);
+
+  header {
+    .header__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1024px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 32px 0;
+
+      h1 {
+        color: variables.$lightGray;
+        font-weight: 300;
+        font-size: 40px;
+        span {
+          color: variables.$purple;
+        }
+      }
+
+      button {
+        background-color: transparent;
+        border: 2px solid variables.$purple;
+        border-radius: 6px;
+        padding: 21px 30px;
+        color: variables.$lightGray;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
