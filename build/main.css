@@ -6,9 +6,13 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background: linear-gradient(252.44deg, #1a1a1a 0%, #0a0a0a 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  padding-bottom: 160px;
 }
 body header .header__container {
   display: flex;
@@ -36,6 +40,83 @@ body header .header__container button {
   font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+body header .header__container button:hover {
+  background-color: #899bff;
+  color: #0c0c0c;
+  transition-duration: 0.5s;
+}
+body .main__container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 72px;
+}
+body .main__container__call-to-action {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: center;
+  color: #f9f9f9;
+}
+body .main__container__paragraph {
+  font-size: 32px;
+  font-weight: 500;
+  color: #899bff;
+  margin: 32px 0 105px;
+}
+body .main__container span {
+  font-size: 26px;
+  font-weight: 500px;
+  line-height: 36px;
+  width: 100%;
+  color: #aeaeae;
+}
+body .main__container form {
+  margin-top: 48px;
+  width: 100%;
+}
+body .main__container form:first-child {
+  margin-bottom: 24px;
+}
+body .main__container form .form__input-group {
+  width: 100%;
+  margin-bottom: 24px;
+}
+body .main__container form .form__input-group label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #f9f9f9;
+}
+body .main__container form .form__input-group input {
+  width: 100%;
+  height: 60px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #212529;
+  margin-top: 8px;
+}
+body .main__container form .form__input-group input:focus {
+  outline-color: #899bff;
+}
+body .main__container form button {
+  width: 100%;
+  height: 60px;
+  margin-top: 16px;
+  background-color: #899bff;
+  color: #0c0c0c;
+  font-weight: 600;
+  font-size: 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+body .main__container form button:hover {
+  background-color: #7a8eff;
+  transition-duration: 0.5s;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,9 +2,13 @@
 @use "variables.scss";
 
 body {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background: linear-gradient(252.44deg, #1a1a1a 0%, #0a0a0a 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  padding-bottom: 160px;
 
   header {
     .header__container {
@@ -34,6 +38,96 @@ body {
         font-size: 15px;
         font-weight: bold;
         text-transform: uppercase;
+        cursor: pointer;
+        transition-duration: 0.5s;
+
+        &:hover {
+          background-color: variables.$purple;
+          color: variables.$black;
+          transition-duration: 0.5s;
+        }
+      }
+    }
+  }
+
+  .main__container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 72px;
+
+    &__call-to-action {
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 60px;
+      text-align: center;
+      color: variables.$lightGray;
+    }
+
+    &__paragraph {
+      font-size: 32px;
+      font-weight: 500;
+      color: variables.$purple;
+      margin: 32px 0 105px;
+    }
+
+    span {
+      font-size: 26px;
+      font-weight: 500px;
+      line-height: 36px;
+      width: 100%;
+      color: variables.$gray;
+    }
+
+    form {
+      margin-top: 48px;
+      width: 100%;
+
+      &:first-child {
+        margin-bottom: 24px;
+      }
+
+      .form__input-group {
+        width: 100%;
+        margin-bottom: 24px;
+
+        label {
+          font-size: 18px;
+          font-weight: 500;
+          color: variables.$lightGray;
+        }
+
+        input {
+          width: 100%;
+          height: 60px;
+          border-radius: 4px;
+          background-color: transparent;
+          border: 1px solid variables.$blackLight;
+          margin-top: 8px;
+
+          &:focus {
+            outline-color: variables.$purple;
+          }
+        }
+      }
+
+      button {
+        width: 100%;
+        height: 60px;
+        margin-top: 16px;
+        background-color: variables.$purple;
+        color: variables.$black;
+        font-weight: 600;
+        font-size: 24px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition-duration: 0.5s;
+
+        &:hover {
+          background-color: darken(variables.$purple, 3%);
+          transition-duration: 0.5s;
+        }
       }
     }
   }
