@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="build/main.css">
+    <link rel="shortcut icon" href="source/img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&family=Saira+Condensed:wght@300&family=Sora:wght@600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="build/main.css">
     <title>Newslleter</title>
 </head>
 
@@ -27,18 +28,34 @@
 
         <span>Preencha os campos para receber as notícias sobre programação</span>
 
-        <form>
+        <form class="form">
             <div class="form__input-group">
                 <label for="name">Nome</label>
-                <input type="text" id="name">
+                <input type="text" id="name" required>
             </div>
             <div class="form__input-group">
                 <label for="email">E-mail</label>
-                <input type="email" id="email">
+                <input type="email" id="email" required>
             </div>
-            <button type="submit">Enviar</button>
+            <button id="btn-submit" type="submit">Enviar</button>
         </form>
     </main>
+    <div class="modal ">
+        <div class="modal__bg"></div>
+        <div class="modal__content">
+            <div id="sucess-message" class="modal__content__message modal__content__message--sucess">
+                <p>E-mail cadastrado
+                    com <span>sucesso</span>!
+            </div>
+            </p>
+            <div id="error-message" class="modal__content__message modal__content__message--error">
+                <p>E-mail <span>não</span> cadastrado!</p>
+            </div>
+            <button id="btn-close"
+                class="modal__content__btn__close  modal__content__btn__close--sucess">Fechar</button>
+        </div>
+    </div>
+    <script src="source/scripts/main.js"></script>
 </body>
 
 </html>

@@ -131,4 +131,77 @@ body {
       }
     }
   }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+
+    &--is-visible {
+      display: flex;
+    }
+
+    &__bg {
+      width: 100vw;
+      height: 100vh;
+      background-color: #0a0a0ade;
+    }
+
+    &__content {
+      position: absolute;
+      top: 200px;
+      left: 340px;
+      width: 800px;
+      height: 300px;
+      background-color: variables.$black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      border: 1px solid variables.$blackLight;
+
+      &__message {
+        font-size: 32px;
+        font-family: sora;
+        font-weight: 600;
+        color: variables.$lightGray;
+        margin-bottom: 48px;
+
+        &--error {
+          display: none;
+          span {
+            color: variables.$red;
+          }
+        }
+
+        &--sucess {
+          display: none;
+          span {
+            color: variables.$green;
+          }
+        }
+      }
+
+      &__btn__close {
+        width: 600px;
+        height: 60px;
+        border-radius: 4px;
+        border: none;
+        font-size: 24px;
+        font-weight: bold;
+        color: variables.$black;
+        cursor: pointer;
+
+        &--error {
+          background-color: variables.$red;
+        }
+
+        &--sucess {
+          background-color: variables.$green;
+        }
+      }
+    }
+  }
 }
