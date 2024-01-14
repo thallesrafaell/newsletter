@@ -7,11 +7,18 @@
 
 body {
   width: 100vw;
+  height: 100vh;
   background: linear-gradient(252.44deg, #1a1a1a 0%, #0a0a0a 100%);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden;
+  overflow: hidden;
   padding-bottom: 40px;
+}
+@media screen and (max-width: 1600px) {
+  body {
+    overflow-y: scroll;
+    height: 100%;
+  }
 }
 body header .header__container {
   display: flex;
@@ -54,24 +61,26 @@ body .main__container {
   padding-top: 35px;
 }
 body .main__container__call-to-action {
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 600;
-  line-height: 60px;
+  line-height: 50px;
   text-align: center;
   color: #f9f9f9;
 }
 body .main__container__paragraph {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 500;
   color: #899bff;
-  margin: 32px 0 60px;
+  margin: 32px 0 32px;
+  text-align: center;
 }
 body .main__container span {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 500px;
   line-height: 36px;
   width: 100%;
   color: #aeaeae;
+  text-align: center;
 }
 body .main__container form {
   margin-top: 48px;

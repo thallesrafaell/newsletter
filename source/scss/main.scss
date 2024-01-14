@@ -3,11 +3,17 @@
 
 body {
   width: 100vw;
+  height: 100vh;
   background: linear-gradient(252.44deg, #1a1a1a 0%, #0a0a0a 100%);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden;
+  overflow: hidden;
   padding-bottom: 40px;
+
+  @media screen and (max-width: 1600px) {
+    overflow-y: scroll;
+    height: 100%;
+  }
 
   header {
     .header__container {
@@ -56,26 +62,28 @@ body {
     padding-top: 35px;
 
     &__call-to-action {
-      font-size: 48px;
+      font-size: 38px;
       font-weight: 600;
-      line-height: 60px;
+      line-height: 50px;
       text-align: center;
       color: variables.$lightGray;
     }
 
     &__paragraph {
-      font-size: 32px;
+      font-size: 28px;
       font-weight: 500;
       color: variables.$purple;
-      margin: 32px 0 60px;
+      margin: 32px 0 32px;
+      text-align: center;
     }
 
     span {
-      font-size: 26px;
+      font-size: 22px;
       font-weight: 500px;
       line-height: 36px;
       width: 100%;
       color: variables.$gray;
+      text-align: center;
     }
 
     form {
