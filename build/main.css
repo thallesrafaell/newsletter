@@ -6,13 +6,12 @@
 }
 
 body {
-  height: 100%;
   width: 100vw;
   background: linear-gradient(252.44deg, #1a1a1a 0%, #0a0a0a 100%);
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
-  padding-bottom: 160px;
+  padding-bottom: 40px;
 }
 body header .header__container {
   display: flex;
@@ -21,7 +20,7 @@ body header .header__container {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
-  padding: 32px 0;
+  padding: 32px 0 16px;
 }
 body header .header__container h1 {
   color: #f9f9f9;
@@ -52,7 +51,7 @@ body .main__container {
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 72px;
+  padding-top: 35px;
 }
 body .main__container__call-to-action {
   font-size: 48px;
@@ -65,7 +64,7 @@ body .main__container__paragraph {
   font-size: 32px;
   font-weight: 500;
   color: #899bff;
-  margin: 32px 0 105px;
+  margin: 32px 0 60px;
 }
 body .main__container span {
   font-size: 26px;
@@ -97,6 +96,16 @@ body .main__container form .form__input-group input {
   background-color: transparent;
   border: 1px solid #212529;
   margin-top: 8px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #f9f9f9;
+}
+body .main__container form .form__input-group input:-webkit-autofill {
+  -webkit-text-fill-color: #f9f9f9 !important;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 body .main__container form .form__input-group input:focus {
   outline-color: #899bff;
@@ -134,8 +143,8 @@ body .modal__bg {
 }
 body .modal__content {
   position: absolute;
-  top: 200px;
-  left: 340px;
+  top: 300px;
+  left: 450px;
   width: 800px;
   height: 300px;
   background-color: #0c0c0c;
